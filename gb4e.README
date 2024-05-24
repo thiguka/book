@@ -1,0 +1,11 @@
+The style file gb4e provides an environment for linguistic examples, a command
+for glossed sentences, and a grab-bag of various other goodies.
+
+Authors: Hans-Peter Kolb and Craig Thiersch (c_thiersch@alum.mit.edu)
+
+The code was developed from the  midnight and  covington  packages. It may be
+distributed and/or modified unter the conditions of the LaTeX Project Public 
+License, either version 1.2 of this license or (at your option) any later version.
+
+The latest version of the LaTeX Project Public License can be found at this URL:
+http://www.latex-project.org/lppl.txt
