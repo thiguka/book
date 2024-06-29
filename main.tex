@@ -1,12 +1,14 @@
-\documentclass{thiguka}
+\documentclass{thigukabook}
 \usepackage{bookmark}
 \usepackage{multirow}
 \usepackage{tabularx}
 \usepackage{lmodern}
 \usepackage{multicol}
+
+\usepackage{expex}
+\lingset{everygla=, belowglpreambleskip=-0.5ex, aboveglftskip=-0.5ex} % gloss formatting
+
 \usepackage[margin=4em]{geometry}
-\usepackage{gb4e}
-\setlength{\glossglue}{5pt plus 2pt minus 1pt}
 
 \usepackage{array}
 \usepackage{tipa}
@@ -32,18 +34,21 @@
 
 \thigukacopyright{}
 
+
 \section*{About}
 Thiguka is a constructed language that Lemuria has continued to develop since April 2024.
 This contains a full description of Thiguka's grammar, ready for your reading pleasure.
 
 \section*{Glossing abbreviations}
-
 AGR~ADJ is used for adjective agreement.
-\begin{exe}
-    \ex{} \gll{}tu\~{}{}gu-elo tubi\\
-    AGR\~{}ADJ-yellow water\\
-    \glt{}`urine'
-\end{exe}
+
+\ex
+\begingl
+    \gla  tu\~{}{}gu-elo tubi//
+    \glb  AGR\~{}ADJ-yellow water//
+    \glft `urine'//
+\endgl
+\xe
 
 PROX is used for the proximal determiner.
 
@@ -59,9 +64,9 @@ There are some people who have (constructively) criticized Thiguka; the criticis
 So far the only person to offer any extensive criticism is Zethar of the Conlangs Discord Network; in June 2024, I took part in a translation relay that Zethar hosted.
 At the end of the contest I received about a page's worth of criticism, which I used to further improve Thiguka's documentation.
 
-\newpage
-
 \tableofcontents
+
+\part{Language}
 
 \input{parts/phonology.tex}
 \input{parts/grammar.tex}
