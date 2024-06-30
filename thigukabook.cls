@@ -57,6 +57,9 @@
 Thiguka is in the public domain.
 
 This document is also in the public domain, under the terms of CC0 1.0 Universal, \\at \url{https://creativecommons.org/publicdomain/zero/1.0/}.
+
+Exceptions may arise; translated texts may be derived from copyrighted English text.
+Disclaimers will be provided as needed on each translation's section.
 }
 
 \renewcommand{\section}{%
