@@ -4,6 +4,7 @@
 \usepackage{tabularx}
 \usepackage{lmodern}
 \usepackage{multicol}
+\usepackage{datetime}
 
 \usepackage{expex}
 \lingset{everygla=, belowglpreambleskip=-0.5ex, aboveglftskip=-0.5ex} % gloss formatting
@@ -20,10 +21,11 @@
 % Change this filename to the name of whatever you're writing about the language.
 
 % Thiguka is in the public domain; and so is its documentation!
-
+\newdateformat{monthyeardate}{%
+  \monthname[\THEMONTH] \THEYEAR}
 
 \title{The Thiguka Language}
-\date{June 2024}
+\date{\monthyeardate\today}
 \author{Lemuria}
 
 \begin{document}
