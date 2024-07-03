@@ -2,174 +2,21 @@
 \chapter{Grammar}
 Thiguka has an agglutinative grammar, a nominative-accusative case marking system, subject-verb-object word order, a tense-aspect system, a single copula with 37 irregular forms that inflect for time, person, and number, and a 38th irregular form that acts as a general-purpose copula.
 
-\section{Plurality}
-Plurality marking is optional.
-If the speaker does not know the quantity of a noun, they may simply omit it.
-
-\begin{table}[h!]
-    \centering
-    \caption{Plurality}
-    \begin{tabularx}{8cm}{|X|X|}
-        \hline
-        \textbf{Plurality} & \textbf{Suffix} \\
-        \hline
-        None (zero) & -pa \\
-        Singular & -sa \\
-        Dual & -gula \\
-        Plural & -elah \\
-        \hline
-    \end{tabularx}
-\end{table}
+\input{parts/grammar/plurality.tex}
 
 \input{parts/grammar/case.tex}
 
 \input{parts/grammar/adjectives.tex}
 
-\section{Determiners}
-Thiguka has proximal, medial, and distal determiners. Determiners are placed before root words. 
+\input{parts/grammar/determiners.tex}
 
-\ex
-\begingl
-    \gla ka\~{}{}gu-parthas \emph{kasa} kaela//  
-    \glb \agradj{}-pink.purple PROX.DET tree//  
-    \glft `\emph{this} sakura tree'//  
-\endgl
-\xe
-
-\ex
-\begingl
-    \gla ka\~{}{}gu-parthas \emph{saka} kaela//  
-    \glb \agradj{}-pink.purple MED.DET tree//  
-    \glft `\emph{that} sakura tree \emph{near you}//  
-\endgl
-\xe
-
-\ex
-\begingl
-    \gla ka\~{}{}gu-parthas \emph{asila} kaela//  
-    \glb \agradj{}-pink.purple DIS.DET tree//  
-    \glft `\emph{that} sakura tree'//  
-\endgl
-\xe
-
-\section{Tense-aspect}
-Thiguka has a tense-aspect system.
-
-Tense and aspect are optional.
-If tense and aspect are omitted, the verb becomes infinitive; or the time
-it took place becomes ambiguous, granting it time-independence.
-
-\ex
-\begingl
-    \gla katarila//
-    \glb outer.space.travel//
-    \glft `to travel through outer space'//
-\endgl
-\xe
-
-\ex
-\begingl
-    \gla ras-katarila-ta//
-    \glb ACCIDENT-outer.space.travel-PRS//
-    \glft `to have accidentally traveled through outer space'//
-\endgl
-\xe
-
-\ex
-\begingl
-    \gla ge-katarila-sa//
-    \glb PROG-outer.space.travel-PRS//
-    \glft `to be currently traveling through outer space'//
-\endgl
-\xe
-
-\begin{table}[h!]
-    \centering
-    \caption{Tense}
-    \begin{tabularx}{8cm}{|X|X|}
-        \hline
-        \textbf{Tense} & \textbf{Suffix} \\
-        \hline
-        Past & -ta \\
-        Recent past & -tu \\
-        Present & -sa \\
-        Future & -tha \\
-        \hline
-    \end{tabularx}
-\end{table}
-
-\begin{table}[h!]
-    \centering
-    \caption{Aspect}
-    \begin{tabularx}{8cm}{|X|X|}
-        \hline
-        \textbf{Aspect} & \textbf{Prefix} \\
-        \hline
-        Perfective & pa- \\
-        Perfect & fe- \\
-        Progressive & ge- \\
-        Imperfective & sa- \\
-        Contemplative & kas- \\
-        Accidental & ras- \\
-        Intentional & ka- \\
-        \hline
-    \end{tabularx}
-\end{table}
-
-\section{Pronouns}
-Thiguka completely lacks gender distinction in pronouns, and has a clusivity distinction in first person pronouns.
-
-\begin{table}[h!]
-    \centering
-    \caption{Pronouns}
-    \begin{tabularx}{15cm}{|X|X|X|X|}
-        \hline
-        person/number & \textbf{First} & \textbf{Second} & \textbf{Third} \\
-        \hline
-        singular & thaka & kake & pothu \\
-        plural   & & katake & rafu \\
-        inclusive plural & situ & & \\
-        exclusive plural & pata & & \\
-        \hline
-    \end{tabularx}
-\end{table}
-
-Thiguka has no T-V distinction in pronouns. Politeness may be achieved by attaching positive adjectives to second-person pronouns, but this is discouraged and goes against Lemuria's intentions.
-
+\input{parts/grammar/tenseaspect.tex}
+\input{parts/grammar/pronouns.tex}
 \input{parts/grammar/verbs.tex}
 \input{parts/grammar/adverbs.tex}
+\input{parts/grammar/template.tex}
 
-\section{Template}
-Thiguka positions morphemes in a specific order, based on whether it is a noun or verb.
-
-\subsection{Noun}
-For nouns, the order is as follows: Derivational prefixes, Negation or intensifiers, Stem, Case, Adverb suffixes, Plurality.
-
-\subsection{Verb}
-For verbs, the order is as follows: Derivational prefixes, Negation or intensifiers, Aspect, Stem, Tense, Adverb suffixes
-
-\section{Copula}
-Thiguka has a single copula with 38 irregular forms.
-
-\begin{table}[h!]
-    \centering
-    \caption{Copula forms}
-    \begin{tabularx}{15cm}{|X|X|X|X|X|}
-        \hline
-        Person & \textbf{Past} & \textbf{Recent Past} & \textbf{Present} & \textbf{Future} \\
-        \hline
-        1SG & lasata & lasatu & lasa & lasatha \\
-        1DU & lagulata & lagulatu & lagulasa & lagulatha \\
-        1PL & lelahtaw & lelahtaw & lelahsa & lelahtha \\
-        2SG & kaketa & katu & kasa & katha \\
-        2DU & kagulata & kagulatu & kagulasa & kagulatha \\
-        2PL & kelahta & kelahtu & kelahsa & kelahtha \\
-        3SG & gulata & gulatu & gulaya & gulatha \\
-        3DU & poguta & pogutu & pogusa & pogutha \\
-        3PL & lotares & lotures & lores & lotheres \\
-        \hline
-    \end{tabularx}
-\end{table}
+\input{parts/grammar/copula.tex}
 
 % ! general-purpose
 % | colspan=4 | las
