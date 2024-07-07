@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{thiguka}[2024/05/24 Thiguka-related documentation]
+\ProvidesClass{thigukabook}[2024/05/24 Thiguka-related documentation]
 \LoadClass[10pt,a4paper,twoside]{book}
 \usepackage{hyperref}
 
